@@ -4,6 +4,10 @@ $(document).ready(function() {
     const userNumbers = $("input#number").val();
     $(".outputText").text(numberedArray(userNumbers));
   });
+  $("form#reset").submit(function(event) {
+    location.reload();
+    event.preventDefault();
+  });
 });
 
 function numberedArray(inputNumber) {

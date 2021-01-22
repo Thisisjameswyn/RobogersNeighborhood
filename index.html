@@ -9,15 +9,27 @@
 </head>
 <body>
   <div class = "container">
+    <div class="welcome">
+      <h2>Welcome Neighbor Unit!</h2>
+    </div>
     <form id="numberEntry">
       <div class="form-group">
-        <label for="number">Hello neighbor, it's great to see you today.  Why don't you enter a number</label>
+        <label for="number">Hello neighbor user, it's great to interface with you today.  Why don't you insert a number and let this unit report a story</label>
         <input id="number" class="form-control" type="number">
+        <div class="btn-group">
+          <button type="submit" class="btn-dark">Display narrative</button>
+        </div>
       </div>
-      <div class="outputArea">
-        <p class="outputText"></p>
+    </form>
+    <form id="reset">
+      <div class="btn-group">
+        <button type="submit" class="btn-dark">ERROR ERROR RESET</button>
       </div>
-      <img src ="img/Around-the-Neighborhood.jpg" class="nhImage" alt="Hello Neighbor">
+    </form>
+    <img src ="img/Around-the-Neighborhood.jpg" class="nhImage" alt="Hello Neighbor">
+    <div class="outputArea">
+      <p class="outputText"></p>
+    </div>
   </div>
 </body>
 </html>

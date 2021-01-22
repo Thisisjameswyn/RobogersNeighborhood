@@ -1,9 +1,31 @@
 .outputArea{
-  color:red;
+  color:grey;
+  border: 2px solid rgb(121, 180, 161);
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(175, 255, 228);
+  margin: 10px;
 }
 
 .nhImage{
-  box-sizing: border-box;
   max-width: 100%;
-  float: left;
+  border: 5px solid grey;
+}
+
+.form-group{
+  width: 100%;
+  font-size: 20px;
+}
+
+.form-control{
+  width: 10%;
+}
+
+body{
+  background-color: aquamarine;
+  color: grey;
+}
+
+.btn-group{
+  display: inline-block;
 }
