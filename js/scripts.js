@@ -1,7 +1,10 @@
-//UI logic
-
-
-//Business
+$(document).ready(function() {
+  $("form#numberEntry").submit(function(event) {
+    event.preventDefault();
+    const userNumbers = $("input#number").val();
+    $(".outputText").text(numberedArray(userNumbers));
+  });
+});
 
 function numberedArray(inputNumber) {
   let numberArray = [];
@@ -17,17 +20,5 @@ function numberedArray(inputNumber) {
         numberArray.push(indexComp);
       }
     }
-    console.log(numberArray);
+    return numberArray;
   }
-  
-  numberedArray(20);
-  
-
-//take input number and assign value to index amount
-//add number sequentially to array based on amount of input number
-//check each index in the array for a 1 2 or 3 against a comparison argument
-//replace all 1 with "Beep!"
-//replace all 2 with "Boop!"
-//replace all 3 with "Won't you be my neighbor?"
-
-//
