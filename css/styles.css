@@ -27,5 +27,8 @@ body{
 }
 
 .btn-group{
-  display: inline-block;
+  padding: 3px;
+  float: left;
+  bottom: 10px;
+  width: 20%;
 }
