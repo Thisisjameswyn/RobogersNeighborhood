@@ -4,18 +4,19 @@
 //Business
 
 function numberedArray(inputNumber) {
-  const compArray = [1,2,3];
   let numberArray = [];
-    for (let index = 0; index <= inputNumber; index += 1) {
-      if(compArray.includes(index)) {
-        numberArray.push("Check!");
-      } else {
-        numberArray.push(index);
+    for (let index = 0; index <= inputNumber; index ++) {
+      let indexComp = index.toString();
+      if(indexComp.includes(3)) {
+        numberArray.push("Won't you be my neighbor?");
+      } else if (indexComp.includes(2)) {
+        numberArray.push("Boop!");
+      } else if (indexComp.includes(1)) {
+        numberArray.push("Beep!");
+      } else  {
+        numberArray.push(indexComp);
       }
-      
-      
     }
-    /* const array = [inputNumber]; */
     console.log(numberArray);
   }
   
@@ -24,7 +25,9 @@ function numberedArray(inputNumber) {
 
 //take input number and assign value to index amount
 //add number sequentially to array based on amount of input number
-//check each index in the array for a 1 2 or 3 against a comparison array
+//check each index in the array for a 1 2 or 3 against a comparison argument
 //replace all 1 with "Beep!"
 //replace all 2 with "Boop!"
 //replace all 3 with "Won't you be my neighbor?"
+
+//
