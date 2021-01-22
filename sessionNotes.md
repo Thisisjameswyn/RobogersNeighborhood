@@ -1,0 +1,1 @@
+Research research research, spent 8-9 researching TDD and how to turn my solution into a required TDD style
