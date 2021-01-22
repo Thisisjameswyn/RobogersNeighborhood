@@ -1,0 +1,9 @@
+.outputArea{
+  color:red;
+}
+
+.nhImage{
+  box-sizing: border-box;
+  max-width: 100%;
+  float: left;
+}
