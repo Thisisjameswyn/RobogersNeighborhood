@@ -1,11 +1,15 @@
 $(document).ready(function() {
   $("#storyFoot").hide();
+  $(".btn-group2").hide();
+  
   $("form#numberEntry").submit(function(event) {
     event.preventDefault();
     const userNumbers = $("input#number").val();
     $(".outputText").text(numberedArray(userNumbers));
     $("#storyFoot").show();
+    $(".btn-group2").show();
   });
+ 
   $("form#reset").submit(function(event) {
     location.reload();
     event.preventDefault();
