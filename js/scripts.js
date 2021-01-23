@@ -1,8 +1,10 @@
 $(document).ready(function() {
+  $("#storyFoot").hide();
   $("form#numberEntry").submit(function(event) {
     event.preventDefault();
     const userNumbers = $("input#number").val();
     $(".outputText").text(numberedArray(userNumbers));
+    $("#storyFoot").show();
   });
   $("form#reset").submit(function(event) {
     location.reload();
@@ -13,15 +15,15 @@ $(document).ready(function() {
 function numberedArray(inputNumber) {
   let numberArray = [];
     for (let index = 0; index <= inputNumber; index ++) {
-      let indexComp = index.toString();
-      if(indexComp.includes(3)) {
+      let indexStr = index.toString();
+      if(indexStr.includes(3)) {
         numberArray.push("Won't you be my neighbor?");
-      } else if (indexComp.includes(2)) {
+      } else if (indexStr.includes(2)) {
         numberArray.push("Boop!");
-      } else if (indexComp.includes(1)) {
+      } else if (indexStr.includes(1)) {
         numberArray.push("Beep!");
       } else  {
-        numberArray.push(indexComp);
+        numberArray.push(indexStr);
       }
     }
     return numberArray;
